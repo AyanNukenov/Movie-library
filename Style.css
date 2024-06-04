@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  width: 1920px;
+  height: 100vh;
+}
+
+.wrapper,
+main {
+  width: 100%;
+}
+
+main {
+  display: flex;
+}
+
+header,
+.movies {
+  background-color: black;
+}
+
+header > h1 {
+  color: white;
+  padding: 10px 20px;
+  font-family: sans-serif;
+}
+
+.header_lib {
+  color: red;
+}
+
+.menu {
+  background-color: rgb(92, 89, 89);
+}
+
+.menu {
+  width: 5%;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home,
+.cinema,
+.TV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.home:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.cinema:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.TV:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.content,
+.content_head {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+}
+
+.content_head {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.genre_films,
+.year,
+.country,
+.sort {
+  height: 50px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+input {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.search_genre {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 10px;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 20px;
+  left: 50px;
+  width: 80px;
+}
+
+.search_title {
+  background: url("assets/Search.png") 10px center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding-left: 40px;
+  height: 35px;
+  background-color: rgb(63, 63, 63);
+}
+
+.text {
+  color: rgb(65, 62, 62);
+  position: relative;
+  left: 1450px;
+  bottom: 20px;
+}
+
+.movies {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.poster {
+  width: 250px;
+}
